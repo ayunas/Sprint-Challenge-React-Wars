@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 import StarWars from './components/StarWars.js'
+import StarWarsJSON from './components/StarWarsJSON.json'
 
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: StarWarsJSON
     };
   }
 
