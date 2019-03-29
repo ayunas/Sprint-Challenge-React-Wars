@@ -7,14 +7,14 @@ class StarWars extends React.Component {
     render() {
         
         return (
-            <div>
+            <ol>
             {StarWarsJSON[0].name}
             {StarWarsJSON.map( character => {
-            return <p>{character.name}</p>
+            return <li>{character.name}</li>
             })}
             
             
-            </div>
+            </ol>
             
         );
     }
