@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+ol {
+    text-align: left;
+    border: 1px solid white;
+    background-color: black;
+    font-family: fantasy;
+    margin: 20px 40px;
+}
+
+li {
+    color: white;
+    border: 1px solid white;
+    line-height: 2;
+    padding: 10px;
+}

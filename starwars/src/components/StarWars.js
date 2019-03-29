@@ -1,4 +1,5 @@
 import React from 'react';
+import './StarWars.css';
 import StarWarsJSON from './StarWarsJSON.json';
 
 
@@ -8,7 +9,6 @@ class StarWars extends React.Component {
         
         return (
             <ol>
-            {StarWarsJSON[0].name}
             {StarWarsJSON.map( character => {
             return <li>{character.name}</li>
             })}
