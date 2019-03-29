@@ -1,12 +1,13 @@
 import React from 'react';
+import StarWarsJSON from './StarWarsJSON.json';
 
 
 class StarWars extends React.Component {
     
-    render(props) {
+    render() {
         
         return (
-            <div>Testing StarWars Component</div>
+            <div>{StarWarsJSON[0].name}</div>
         );
     }
 }

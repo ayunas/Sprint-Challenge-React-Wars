@@ -3,9 +3,6 @@ import './App.css';
 import StarWars from './components/StarWars.js'
 
 
-
-
-
 class App extends Component {
   constructor() {
     super();
@@ -38,25 +35,14 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <StarWars char={this} />
+        <StarWars />
       </div>
     );
   }
 }
 
 
-function getStarWarsChars() {
-    const URL = 'https://swapi.co/api/people/';
-    axios.get(URL).then( response => showStarWarsChars(response.data));
-}
 
-function showStarWarsChars(data) {
-    for (let i = 0; i < data.results.length; i++) {
-        console.log(data.results[i].name);   
-    }
-}
-
-getStarWarsChars();
 
 
 export default App;
