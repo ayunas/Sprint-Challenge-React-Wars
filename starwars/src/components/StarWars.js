@@ -1,6 +1,7 @@
 import React from 'react';
 import './StarWars.css';
 import StarWarsJSON from './StarWarsJSON.json';
+import Character from './Character.js'
 
 
 class StarWars extends React.Component {
@@ -10,12 +11,11 @@ class StarWars extends React.Component {
         return (
             <ol>
             {StarWarsJSON.map( character => {
-            return <li>{character.name}</li>
+            return (
+                <Character char={character}/>
+           );
             })}
-            
-            
             </ol>
-            
         );
     }
 }
