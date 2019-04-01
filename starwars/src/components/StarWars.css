@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+ol {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    border: 1px solid white;
+    background-color: black;
+    font-family: fantasy;
+    margin: 20px 40px;
+    
+}
+
+ul {
+    border: 1px solid white;
+    margin: 10px;
+}
+
+li {
+    color: white;
+    border: 1px solid white;
+    line-height: 2;
+    padding: 10px;
+    font-size: 22px;
+    margin: 20px;
+}
+
+li strong {
+    font-size: 14px;
+}
